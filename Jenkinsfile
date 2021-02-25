@@ -1,10 +1,6 @@
 pipeline {
-    agent any
-    
-    tools{
-        maven 'apache-maven-3.6.0'
-    }
-
+    agent docker 
+   
     stages {
         stage('checkount Git') {
             steps {
